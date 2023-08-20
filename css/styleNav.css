@@ -1,0 +1,18 @@
+/*navbar*/
+.navbar{
+    height: 100px;
+}
+.btn:hover{
+    background-color:rgba(6, 132, 143, 0.691);;
+}
+.nav-link{
+    border-radius: 2rem;
+}
+.nav-link:hover{
+    background-color: rgba(6, 132, 143, 0.691);
+    transition: 5ms;
+}
+
+.bi{
+    background-color: white;
+}
