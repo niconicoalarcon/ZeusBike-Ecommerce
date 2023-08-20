@@ -1,16 +1,21 @@
+:root{
+    --fondo--cards:#B9B4C7;
+    --color--bg-nav:#352F44;
+    --color--bottons:#FAF0E6;
+    --color--text:#ffff;
+    --color--text--boton:#352F44;
+}
 .card{
-    background-color: #fadd85;
+    background-color: var(--fondo--cards);
 }
 .btn{
-    background-color: #ccba85;
-    color: #ffff;
-    border-color: #ccba88;
+    background-color:var(--color--bottons);
+    color: var(--color--text--boton);
+    border-color: #faf0e66a;
 }
 
 .btn:hover{
-    border-color:black,
+    border-color:black;
+    color:var(--color--text--boton);
 }
-.contenedor_boton_compra{
-    display: flex;
-    justify-content: center;
-}
+

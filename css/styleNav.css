@@ -1,8 +1,9 @@
 /*navbar*/
 :root{
-    --color--bg-nav:#3a390e;
-    --color--bottons:#fadd85;
+    --color--bg-nav:#352F44;
+    --color--bottons:#FAF0E6;
     --color--text:#ffff;
+    --color--text--boton:#352F44;
 }
 /*color de texto*/
 .text_color{
@@ -14,8 +15,9 @@
 }
 /*botones*/
 .boton button{
-    background-color:#ccba85 ;
-    border-color:#ccba85;
+    background-color:var(--color--bottons) ;
+    border-color:#faf0e66a;
+    color: var(--color--text--boton);
 }
 .btn:hover{
     background-color:var(--color--bottons);
@@ -27,4 +29,7 @@
 .nav-link:hover{
     background-color: var(--color--bottons);
     transition: 5ms;
+}
+.fa-solid.fa-cart-shopping{
+    color: var(--color--bottons);
 }
