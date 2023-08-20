@@ -1,0 +1,16 @@
+.card{
+    background-color: #fadd85;
+}
+.btn{
+    background-color: #ccba85;
+    color: #ffff;
+    border-color: #ccba88;
+}
+
+.btn:hover{
+    border-color:black,
+}
+.contenedor_boton_compra{
+    display: flex;
+    justify-content: center;
+}

@@ -1,18 +1,30 @@
 /*navbar*/
-.navbar{
-    height: 100px;
+:root{
+    --color--bg-nav:#3a390e;
+    --color--bottons:#fadd85;
+    --color--text:#ffff;
+}
+/*color de texto*/
+.text_color{
+    color: var(--color--text);
+}
+/*estilos nav*/
+.bg_nav{
+    background-color: var(--color--bg-nav);
+}
+/*botones*/
+.boton button{
+    background-color:#ccba85 ;
+    border-color:#ccba85;
 }
 .btn:hover{
-    background-color:rgba(6, 132, 143, 0.691);;
+    background-color:var(--color--bottons);
+    color: var(--color--text);
 }
 .nav-link{
     border-radius: 2rem;
 }
 .nav-link:hover{
-    background-color: rgba(6, 132, 143, 0.691);
+    background-color: var(--color--bottons);
     transition: 5ms;
-}
-
-.bi{
-    background-color: white;
 }

@@ -1,4 +1,8 @@
+:root{
+  --bg--body:hwb(55 13% 52%);
+}
+/*estilos generales*/
 body{
   color: white;
-  background-color: rgb(76, 100, 100);
+  background-color:var(--bg--body);
 }
