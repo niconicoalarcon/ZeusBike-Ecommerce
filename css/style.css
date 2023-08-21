@@ -4,5 +4,5 @@
 /*estilos generales*/
 body{
   color: white;
-  background-color:var(--bg--body);
+  background-color:var(--bg--body)
 }

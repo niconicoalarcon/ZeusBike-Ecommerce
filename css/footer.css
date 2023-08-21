@@ -1,0 +1,14 @@
+
+.text-center.text-lg-start{
+    background-color: #352F44;
+}
+.btn.btn-lg.btn-floating{
+    background-color: #FAF0E6;
+}
+.copy{
+    background-color: #00000033;
+}
+.copy-text{
+    font-size: 1em;
+    font-style: italic;
+}
