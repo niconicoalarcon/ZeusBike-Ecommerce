@@ -4,9 +4,24 @@
     justify-content: center;
 }
 .contenedor_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2rem;
     width: 400px;
     height: 400px;
-    background-color: #fadd85;
+    background-color: #352F44;
     border-radius: 1em;
+}
+
+.input{
+    border-radius: 1em;
+    display: block;
+    text-align: center;
+}
+.btn-enviar{
+    display: block;
+    border-radius: 1em;
+    padding: 10px;
+    width: 200px;
 }

@@ -20,7 +20,7 @@
                 <a class="nav-link text_color" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text_color" aria-current="page" href="#">Nostros</a>
+                <a class="nav-link text_color" aria-current="page" href="./nosotros.html">Nostros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text_color" href="./contacto.html">Contacto</a>
@@ -39,14 +39,50 @@
     
 <main class="contenido">
     <div class="contenedor_form">
-        <form action="">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="" aria-placeholder="ingrese su nombre">
-        </form>
+        <form class="formulario" action="">
+            <input class="input my-2 py-2 px-5" type="text" name="name" id="name" placeholder="Ingrese su nombre">
+            <input class="input my-2 py-2 px-5" type="text" name="Apellido" id="lastname" placeholder="Ingrese su Apellido">
+            <input class="input my-2 py-2 px-5" type="email" name="email" id="email" placeholder="Ingrese su email">
+            <textarea name="textarea my-3" rows="5" cols="35">Escriba su mensaje</textarea>
+            <input class="btn btn-enviar my-2 ms-5 py-2 px-5" type="submit">
+        
+        
+          </form>
     </div>
     </div>
 </main>
-</body>
+
+
+<!--Comienzo de footer-->
+<div class="container-fluid my-1">
+
+  <footer class="text-center text-lg-start">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn  btn-lg btn-floating mx-2">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2">
+        <i class="fab fa-youtube"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2">
+        <i class="fab fa-instagram"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2">
+        <i class="fab fa-twitter"></i>
+      </button>
+    </div>
+
+    <!-- comienzo Copyright -->
+    <div class="text-center text-white p-3 copy">
+      <h5 class="copy-text">© 2023 Copyright : ZeusBike </h5>
+    </div>
+    <!--final  Copyright -->
+  </footer>
+  
+</div>
+<!--Final footer-->
 <script type="module" src="/main.js"></script>
+</body>
+
 
 </html>
