@@ -3,11 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>Carro de compras</title>
 </head>
 <body>
-    <head>
-        
-    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg bg_nav text_color">
+            <div class="container-fluid text_color">
+                <a><img class="logo" src="../img/logosmall.png" alt="logo zeus bikeshop" width="100" height="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link text_color" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text_color" aria-current="page" href="./nosotros.html">Nostros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text_color" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <form class="d-flex d-flex justify-content-end mx-3 boton" role="search">
+                        <input class="form-control me-2 justify-content-end px-5 " type="search" placeholder="Buscar producto" aria-label="Search">
+                        <button class="btn text_color" type="submit">Buscar</button>
+                    </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    <!--Final barra navegacion-->
+    </header>
+    <main>
+        <section class="container my-5">
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-8">
+                    <div class="card mb-4">
+                        <div class="card-header py-4">
+                            <h4 class="mb-0">
+                                Carrito- 2 artículos 
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row border-bottom py-4 mb-3">
+                                <div class="col-3 mb-1">
+                                    <div class="bg-image rounded">
+                                        <img class="w-100" src="../img/productos/bike2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <h5>Mountain bike Raptor</h5>
+                                    <p>Talle M</p>
+                                    <p>24 Velocidades</p>
+                                    <p>$420000</p>
+                                    <button type="button" class="btn btn-sm me-1 mb-2"><i class="fa-regular fa-trash-can"></i></button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row border-bottom py-4 mb-3">
+                                <div class="col-3 mb-1">
+                                    <div class="bg-image rounded">
+                                        <img class="w-100" src="../img/productos/bike4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <h5>Mountain bike Raptor</h5>
+                                    <p>Talle M</p>
+                                    <p>24 Velocidades</p>
+                                    <p>$420000</p>
+                                    <button type="button" class="btn btn-sm me-1 mb-2"><i class="fa-regular fa-trash-can"></i></button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 "></div>
+            </div>
+        </section>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>

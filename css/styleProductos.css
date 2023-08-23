@@ -18,4 +18,7 @@
     border-color:black;
     color:var(--color--text--boton);
 }
-
+/*Estilos cards productos*/
+.card img{
+    height: 80%;
+}
