@@ -1,0 +1,14 @@
+
+/*imagens de metodo de pago*/
+.tarjetas img{
+    width: 65px;
+}
+
+/*boton de pago*/
+.btn.btn-success{
+    color:#352F44;
+}
+
+.btn.btn-success:hover{
+    background-color: #FAF0E6;
+}
