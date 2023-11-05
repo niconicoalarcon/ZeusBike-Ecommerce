@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>ZeusBike</title>
   </head>
-  <body>
+  <body data-bs-theme="dark">
     <header>
       <!--Comienza Barra de navegacíon-->    
       <nav class="navbar navbar-expand-lg bg_nav text_color">
@@ -35,9 +35,28 @@
               </li>
             </ul>
           <div class="d-flex me-5">
-            <a href="pages/carroshop.html" class="text-reset">
-              <i class="fa-solid fa-cart-shopping fa-lg"></i>
-            </a>
+            <div class="dropdown dropstart">
+              <a type ="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              </a>
+              <ul id="carrito" class="dropdown-menu">
+                <table id="listaCarrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+                <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                  <button id="vaciarCarrito" class="btn btn-danger">Vaciar carrito</button>
+                  <button id="procesarCompra" class="btn btn-primary">Procesar compra</button>
+                </div>
+              </ul>
+            </div>
           </div>
           </div>
         </div>
@@ -83,7 +102,7 @@
     <!--Final Carrusel-->
   </section>
   <!--comienzo de productos-->
-  <section class="m-3 row justify-content-center">
+  <section id="listaProductos" class="m-3 row justify-content-center">
     <div class="card col-3 m-2" style="width: 18rem;">
       <img src="img/productos/bike1_sunpeed_red.webp" class="card-img-top" alt="...">
       <div class="card-body">
@@ -91,9 +110,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle L</li>
           <li class="list-group-item">24 velocidades</li>
-          <li class="list-group-item">$380000</li>
+          <li class="list-group-item precio">$380000</li>
         </ul>
-        <a href="#" class="btn">Comprar</a>
+        <a href="#" class="btn agregarCarrito" data-id="1">Comprar</a>
       </div>
     </div>
     <div class="card m-2 " style="width: 18rem;">
@@ -103,9 +122,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle M</li>
           <li class="list-group-item">24 velocidades</li>
-          <li class="list-group-item">$420000</li>
+          <li class="list-group-item precio">$420000</li>
         </ul>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary agregarCarrito" data-id="2">Comprar</a>
       </div>
     </div>
     <div class="card m-2 " style="width: 18rem;">
@@ -115,9 +134,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle L</li>
           <li class="list-group-item">24 velocidades</li>
-          <li class="list-group-item">$350000</li>
+          <li class="list-group-item precio">$350000</li>
         </ul>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary agregarCarrito" data-id="3">Comprar</a>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem;">
@@ -127,9 +146,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle L</li>
           <li class="list-group-item">21 velocidades</li>
-          <li class="list-group-item">$500000</li>
+          <li class="list-group-item precio">$500000</li>
         </ul>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary agregarCarrito" data-id="4">Comprar</a>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem;">
@@ -139,9 +158,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle M</li>
           <li class="list-group-item">24 velocidades</li>
-          <li class="list-group-item">$600000</li>
+          <li class="list-group-item precio">$600000</li>
         </ul>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary agregarCarrito" data-id="5">Comprar</a>
       </div>
     </div>
     <div class="card m-2" style="width: 18rem;">
@@ -151,9 +170,9 @@
         <ul class="list-unistailed mt-3 mb-4">
           <li class="list-group-item">Talle XL</li>
           <li class="list-group-item">24 velocidades</li>
-          <li class="list-group-item">$580000</li>
+          <li class="list-group-item precio">$580000</li>
         </ul>
-        <a href="#" class="boton_compra btn btn-primary">Comprar</a>
+        <a href="#" class="boton_compra btn btn-primary agregarCarrito" data-id="6">Comprar</a>
       </div>
     </div>
 <!--Final de productos-->  
@@ -187,6 +206,11 @@
   </footer>
   
 </div>
+
+<a href="./pages/coso.html">click</a>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/carrito.js"></script>
     </body>
 </html>
+
+
